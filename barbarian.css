@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fondo:linear-gradient(to top,#bc847efc, #9fa2a1);
+    /* --color-fondo: radial-gradient( #9fa2a1,#bc847efc); */
+    --color-card: #f7f8fa;
+    --color-score:#ec9c3c;
+}
+
+body{
+    font-family: Arial;
+    background: linear-gradient(to top,#928d8df0, #bc847efc);
+}
+
+.card{
+    width: 240px;
+    margin: 100px auto;
+    background: var(--color-card);
+    border-radius: 20px;
+    box-shadow: 0 0 16px -8px #000;
+}
+
+.card__figure{
+    background: var(--color-fondo);
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.card__character{
+    position: absolute;
+    bottom: -20px;
+    left: -65px;
+    right: 0;
+    width: 137%;
+    margin: 0 auto;
+    filter: 
+    drop-shadow(4px 4px 20px #fff9f9);
+}
+
+.card__texts{
+    padding: .7rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card__score{
+    width: 240px;
+    height: 60px;
+    position: static; 
+}
+
+.position{
+    width: 80px;
+    height: 60px;
+    background: var(--color-score);
+    padding: 1rem 0;
+    text-decoration: none;
+    line-height: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Arial Black';
+    position: static;
+}
+
+.training{
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-right: .1px solid #b48026b4;
+    border-top: .1px solid #b48026b4;
+}
+
+.size{
+    font-size: .5rem;
+}
+
+.speed{
+    position: relative;
+    left: 80px;
+    bottom: 60px;
+    border-top: .1px solid #b48026b4;
+}
+
+.cost{
+    position: relative;
+    left: 160px;
+    bottom: 120px;
+    border-bottom-right-radius: 20px;
+    border-left: .1px solid #b48026b4;
+    border-top: .1px solid #b48026b4;
+}
+
+.title_little{
+    margin-top: 30px;
+    color: #ec9c3c;
+    font-size: .5rem;
+    line-height: 1.5;
+}
+
+.tittle_big{
+    font-size: 1.2rem;
+    font-weight:normal;
+}
+
+.paragraph{
+    color: #797878;
+    line-height: 1.2;
+    margin: 15px 0;
+    font-size: .7rem;
+}
+
+.cta{
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: .4rem;
+}
